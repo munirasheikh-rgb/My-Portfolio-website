@@ -1,4 +1,5 @@
 import { techStack } from "../data/techStack";
+import styles from "./TechStack.module.css";
 
 export default function TechStack() {
   return (
@@ -26,20 +27,19 @@ export default function TechStack() {
               </h3>
               <ul
                 aria-labelledby={`tech-category-${id}`}
-                className="flex flex-wrap gap-3 sm:gap-4"
+                className="flex flex-wrap gap-3"
               >
-                {technologies.map(({ name: technology, mark }) => (
+                {technologies.map(({ name: technology, icon: Icon }) => (
                   <li
                     key={technology}
                     tabIndex={0}
-                    className="flex min-h-18 max-w-full items-center gap-3 rounded-lg border border-[#26658C]/60 bg-[#023859] px-4 py-3 text-sm leading-6 font-medium text-slate-100 hover:border-[#54ACBF] focus-visible:border-[#54ACBF] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#54ACBF] motion-safe:transition-[transform,border-color] motion-safe:duration-200 motion-safe:ease-out motion-safe:hover:-translate-y-0.5 sm:gap-4 sm:px-5 sm:text-base"
+                    className={`${styles.card} flex max-w-full items-center gap-3 rounded-lg border px-4 py-3 text-sm leading-6 font-medium sm:text-base`}
                   >
-                    <span
+                    <Icon
                       aria-hidden="true"
-                      className="flex size-10 shrink-0 items-center justify-center rounded-md bg-[#54ACBF]/15 font-mono text-xs font-semibold text-[#A7EBF2]"
-                    >
-                      {mark}
-                    </span>
+                      focusable="false"
+                      className="size-6 shrink-0 text-[var(--accent-light)]"
+                    />
                     <span className="min-w-0 break-words">{technology}</span>
                   </li>
                 ))}

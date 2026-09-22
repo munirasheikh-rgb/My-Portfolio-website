@@ -1,0 +1,34 @@
+.card {
+  color: var(--text-primary);
+  background-color: var(--surface);
+  border-color: color-mix(in srgb, var(--surface-light) 60%, transparent);
+  transition: transform 250ms ease-out, border-color 250ms ease-out,
+    background-color 250ms ease-out;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    background-color: color-mix(in srgb, var(--surface) 75%, var(--surface-light));
+  }
+}
+
+.card:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background-color: color-mix(in srgb, var(--surface) 75%, var(--surface-light));
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:focus-visible {
+    transform: none;
+  }
+}
