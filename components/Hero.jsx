@@ -3,7 +3,7 @@ export default function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="scroll-mt-20 bg-[#011C40] font-sans text-slate-100"
+      className="scroll-mt-20 font-sans text-slate-100"
     >
       <div className="mx-auto grid min-h-[calc(100svh-69px)] max-w-6xl items-center gap-12 px-5 py-16 md:px-6 md:py-20 lg:grid-cols-[1.15fr_1fr] lg:gap-14 lg:px-8 lg:py-24">
         <div className="min-w-0">
