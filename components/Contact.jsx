@@ -23,7 +23,7 @@ export default function Contact() {
       aria-labelledby="contact-heading"
       className="scroll-mt-20 font-sans"
     >
-      <div className="mx-auto max-w-6xl px-5 py-16 md:px-6 md:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-6xl px-4 py-10 md:px-5 md:py-4 ">
         <h2
           id="contact-heading"
           className="text-3xl font-semibold tracking-tight sm:text-4xl"

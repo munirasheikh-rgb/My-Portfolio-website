@@ -13,12 +13,12 @@ export default function Hero() {
           >
             Hi, I’m <span className="text-[#A7EBF2]">Munira Hassan.</span>
           </h1>
-          <p className="mt-5 text-xl leading-snug font-medium sm:text-2xl">
+          <p className="mt-5 text-md leading-snug font-serif sm:text-2xl text-[#098ca9]">
             Full-Stack Software Developer
           </p>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-slate-300 sm:text-lg">
             I build responsive web applications and backend APIs using modern
-            frontend and backend technologies, with a focus on usability and
+            frontend and backend technologies, with a focus on scalability, usability and
             maintainable code.
           </p>
 
@@ -29,9 +29,9 @@ export default function Hero() {
             >
               View Projects
             </a>
-            {/* Add the real CV at public/Munira-Hassan-CV.pdf. */}
+            {/* CV download */}
             <a
-              href="/Munira-Hassan-CV.pdf"
+              href="/documents/Munira_Hassan_Software_Engineer_CV.pdf"
               download
               className="inline-flex min-h-12 items-center justify-center rounded-md border border-[#54ACBF]/70 px-6 py-3 text-sm font-semibold hover:border-[#A7EBF2] hover:bg-[#023859] hover:text-[#A7EBF2] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A7EBF2] motion-safe:transition-colors motion-safe:duration-150"
             >
