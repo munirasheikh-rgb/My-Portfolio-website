@@ -1,0 +1,15 @@
+name: Porfolio CI
+on: [push, pull_request]
+jobs:
+ build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checks out repository name
+        uses: actions/checkout@v6
+      - name: Set Up the node version
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run : npm ci
+      - run: npm run build
+     
